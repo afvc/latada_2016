@@ -1,0 +1,332 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden;
+    
+}
+
+.section-color {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------#moving--------------*/
+
+.moves {
+    width: 100vw;
+    height: 100vh;
+    background: url(lata%203%20colorir.png);
+    background-repeat: space;
+    position: relative;
+    margin: auto;
+    -webkit-animation: mymove 3s;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3;
+    /* Chrome, Safari, Opera */
+    animation: mymove 3s;
+    animation-iteration-count: infinite;
+}
+
+
+/* ---------------#moving_animation--------------*/
+
+@-webkit-keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+/* ---------------#responsiveness--------------*/
+
+/*depois de aplicar sass, remover comentários do extend 
+
+-- conforme as páginas, ou mesmo o "modo" escolhido, podemos querer mudar a cor apenas de certas secções
+
+estas classes servem para dividir a página em secções e permitir que tenham cores diferentes ao mesmo tempo que se mantêm responsivas e com margem das bordas
+
+*/ 
+
+/* ---------------#section_colors--------------*/
+.section-color-light {
+       /*  @extend .section-definer;*/
+    background-color:white;
+    }
+
+.section-color-medium {
+         /*@extend .section-definer;*/
+    background-color:$grey;
+    }
+
+.section-color-dark {
+        /* @extend .section-definer;*/
+    background-color:$black;
+    }
+
+
+/*a aplicação será sempre semelhante à do html latas. a seção de cor por fora e a size por dentro. esta secção define os vários screen sizes da página (quase automaticamente responsivo)
+
+*/ 
+
+/* ---------------#section_sizes--------------*/
+
+.section-size {
+ padding-top: $nav-size*2;
+       padding-bottom: 100px;
+       width: 960px;
+       max-width: 100%;
+        margin: auto;     
+      /*  @include breakpoint ($min: xs) {
+            width: 350px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: sm) {
+            width: 620px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: md) {
+            width: 720px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: lg) {
+            width: 1100px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: xl) {
+            width: 1240px;
+            max-width: 100%;
+        } 
+    }
+
+.section-resized-extra {
+  @extend .section-resized;
+    padding-bottom: 138px;
+    
+ @include breakpoint ($min: md) {
+      padding-bottom: 193px;}
+}
+
+
+.section-resized-extra-plus {
+  @extend .section-resized;
+    padding-bottom: 149px;
+    
+ @include breakpoint ($min:xs) {
+      padding-bottom: 212px;}
+    
+    @include breakpoint ($min:sm) {
+      padding-bottom: 219px;}
+    
+     @include breakpoint ($min:md) {
+      padding-bottom: 232px;}
+
+    @include breakpoint ($min:lg) {
+      padding-bottom: 160px;}
+    
+    
+}
+*/
+
+}
+
+
+
+/*para que 90% das coisas de responsividade funcionem e consigamos evitar código lixo, existem os mixins, são muito uteis para fazer breakpoints ou animações, ex:
+
+
+@mixin breakpoint($min: 0, $max: 0) {
+    $type: type-of($min);
+    @if $type==string {
+        //mobile
+        @if $min==xs {
+            @media (max-width: 640px) {
+                @content;
+            }
+        }
+        //tablet
+        @else if $min==sm {
+            @media screen and (min-width: 641px) and (max-width: 750px)  {
+                @content;
+            }
+        }
+        //medium
+        @else if $min==md {
+            @media (min-width: 750px) and (max-width: 1200px) {
+                @content;
+            }
+        }
+        //large
+        @else if $min==lg {
+            @media (min-width: 1200px) and (max-width: 1280px) {
+                @content;
+            }
+        }
+        //x-large
+        @else if $min==xl {
+            @media (min-width: 1280px) {
+                @content;
+            }
+        }
+        @else {
+            @warn "Breakpoint mixin supports: xs, sm, md, lg";
+        }
+    }
+    @else if $type==number {
+        $query: "all" !default;
+        @if $min !=0 and $max !=0 {
+            $query: "(min-width: #{$min}) and (max-width: #{$max})";
+        }
+        @else if $min !=0 and $max==0 {
+            $query: "(min-width: #{$min})";
+        }
+        @else if $min==0 and $max !=0 {
+            $query: "(max-width: #{$max})";
+        }
+        @media #{$query} {
+            @content;
+        }
+    }
+}
+
+@mixin backface-visibility($backface-visibility) {
+    -webkit-backface-visibility: $backface-visibility;
+    -moz-backface-visibility: $backface-visibility;
+    backface-visibility: $backface-visibility;
+}
+
+@mixin simple-transition($time) {
+    -webkit-transition: all $time;
+    -moz-transition: all $time;
+    transition: all $time;
+}
+
+
+@mixin scale($size) {
+   -webkit-transform: scale($size);
+    -moz-transform: scale($size);
+    -ms-transform: scale($size);
+    transform: scale($size);
+}
+
+
+@mixin translateXandY($translation) {
+    -webkit-transform: translateX($translation)translateY($translation);
+    -moz-transform: translateX($translation)translateY($translation);
+    -ms-transform: translateX($translation)translateY($translation);
+    transform: translateX($translation)translateY($translation);
+}
+
+
+
+
+
+
+
+*/
+
+/* ---------------#font_size_responsive--------------*/
+
+/* isto são sass maps, definem-se algo tipo assim:
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+e depois, basta irmos alterando os tamanhos das fontes conforme os tamanhos das janelas a gosto 
+
+-- estes são tirados do hawkpost, depois teremos de rever os tamanhos/cores/fontes e ver até se são todos necessários
+
+$typescale:( heading1: ( xs: 1.7rem, sm: 1.9rem, md: 2.1rem, lg: 2.3rem),
+    sub1: ( xs: 1rem, sm: 1.05rem, md: 1.1rem, lg: 1.2rem, xl: 1.5rem), 
+	text1: ( xs: 0.8rem, sm: 0.9rem, md: 0.9rem, lg: 1.02rem),
+    smalltext1: ( xs: 0.72rem, sm: 0.75rem, md: 0.77rem, lg: 0.78rem), ); 
+
+*/
+
+
+/*.title {
+        font-family: BoldFont;
+        color: $black;
+        padding: 2vh 0 2vh;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'heading1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'heading1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'heading1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'heading1', 'lg');
+        }
+        @include breakpoint($min:xl) {
+            font-size: map-deep-get($typescale, 'heading1', 'lg');
+        }
+    }
+    
+    .subtitle {
+        font-family: BoldFont;
+        color: $black;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'sub1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'sub1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'sub1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'sub1', 'lg');
+        }
+    }
+    
+    .text {
+        font-family: TextFont;
+        color: $main-color50;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'text1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'text1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'text1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'text1', 'lg');
+        }
+    }
+    
+    .smalltext {
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'lg');
+        }
+    }*/
