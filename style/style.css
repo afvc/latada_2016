@@ -13,43 +13,7 @@ body {
     height: 100%;
 }
 
-/* ---------------#moving--------------*/
 
-.moves {
-    width: 100vw;
-    height: 100vh;
-    background: url(lata%203%20colorir.png);
-    background-repeat: space;
-    position: relative;
-    margin: auto;
-    -webkit-animation: mymove 3s;
-    /* Chrome, Safari, Opera */
-    -webkit-animation-iteration-count: 3;
-    /* Chrome, Safari, Opera */
-    animation: mymove 3s;
-    animation-iteration-count: infinite;
-}
-
-
-/* ---------------#moving_animation--------------*/
-
-@-webkit-keyframes mymove {
-    from {
-        top: 0px;
-    }
-    to {
-        top: 200px;
-    }
-}
-
-@keyframes mymove {
-    from {
-        top: 0px;
-    }
-    to {
-        top: 200px;
-    }
-}
 
 /* ---------------#responsiveness--------------*/
 
