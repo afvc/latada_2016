@@ -1,0 +1,157 @@
+
+/* ---------------background animation--------------*/
+
+.background-animation{
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    width: 100vw;
+}
+
+
+/* ---------------background images--------------*/
+
+.background-img{
+    position: relative;
+    opacity: 0.15;
+}
+
+.background-img__1{
+    width: 20vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down1 14s ease, rotate-left 14s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down1 14s ease, rotate-left 14s;
+            animation-iteration-count: infinite;
+}
+
+
+.background-img__2{
+    width: 40vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 20s ease, rotate-left 20s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 20s ease, rotate-left 20s;
+            animation-iteration-count: infinite;
+}
+
+.background-img__3{
+    width: 60vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 7s ease, rotate-right 7s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 7s ease, rotate-right 7s;
+            animation-iteration-count: infinite;
+}
+
+.background-img__4{
+    width: 10vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down1 25s ease, rotate-right 25s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down1 25s ease, rotate-right 25s;
+            animation-iteration-count: infinite;
+}
+
+.background-img__5{
+    width: 30vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 30s ease, rotate-left 30s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 30s ease, rotate-left 30s;
+            animation-iteration-count: infinite;
+}
+
+
+
+
+/* ---------------#moving_animation--------------*/
+
+
+
+@-webkit-keyframes move-down1 {
+    from {
+        top: -110vh;
+    }
+    to {
+        top: 100vh;
+    }
+}
+
+@keyframes move-down1 {
+    from {
+        top: -110vh;
+    }
+    to {
+        top: 100vh;
+    }
+}
+
+
+@-webkit-keyframes move-down2 {
+    from {
+        top: -150vh;
+    }
+    to {
+        top: 100vh;
+    }
+}
+
+@keyframes move-down2 {
+    from {
+        top: -150vh;
+    }
+    to {
+        top: 100vh;
+    }
+}
+
+
+
+
+@-webkit-keyframes rotate-left {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes rotate-left {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(-30deg);
+    }
+}
+
+
+@-webkit-keyframes rotate-right {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes rotate-right {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
