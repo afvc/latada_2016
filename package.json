@@ -1,64 +1,40 @@
 {
-  "name": "flexboxgrid",
-  "version": "6.3.1",
-  "description": "Grid based off of CSS3 flexbox specification",
-  "style": "dist/flexboxgrid.css",
-  "main": "dist/flexboxgrid.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "Hawkpost",
+  "version": "9000.0.1",
+  "description": "Festa das Latas e Imposição de Insígnias 2016",
+  "main": "",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/kristoferjoseph/flexboxgrid.git"
+    "url": "git+https://github.com/afvc/latada_2016.git"
   },
-  "keywords": [
-    "browser",
-    "flexbox",
-    "grid",
-    "css"
-  ],
-  "author": {
-    "name": "@dam"
-  },
-  "license": "Apache 2",
+  "author": "Whitesmith Co",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kristoferjoseph/flexboxgrid/issues"
+    "url": "https://github.com/afvc/latada_2016/issues"
   },
-  "homepage": "https://github.com/kristoferjoseph/flexboxgrid",
+  "homepage": "https://hawkpost.co",
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^0.7.2",
-    "grunt-contrib-cssmin": "^0.7.0",
-    "grunt-contrib-htmlmin": "^0.1.3",
-    "grunt-contrib-uglify": "^0.2.7",
-    "grunt-contrib-watch": "^0.5.3",
-    "grunt-myth": "^1.0.1",
-    "grunt-processhtml": "^0.2.9"
-  },
-  "gitHead": "3f30c5bbb228aeda8c6c98e566dadc587fbc98df",
-  "_id": "flexboxgrid@6.3.1",
-  "_shasum": "e99898afc07b7047722bb81a958a5fba4d4e20fd",
-  "_from": "flexboxgrid@latest",
-  "_npmVersion": "2.14.12",
-  "_nodeVersion": "4.3.1",
-  "_npmUser": {
-    "name": "dam",
-    "email": "kristoferjoseph@gmail.com"
-  },
-  "dist": {
-    "shasum": "e99898afc07b7047722bb81a958a5fba4d4e20fd",
-    "tarball": "https://registry.npmjs.org/flexboxgrid/-/flexboxgrid-6.3.1.tgz"
-  },
-  "maintainers": [
-    {
-      "name": "dam",
-      "email": "kristoferjoseph@gmail.com"
-    }
-  ],
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/flexboxgrid-6.3.1.tgz_1471021820773_0.712322078179568"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/flexboxgrid/-/flexboxgrid-6.3.1.tgz"
+    "browser-sync": "^2.11.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-deploy-git": "^0.5.3",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "path": "^0.12.7",
+    "run-sequence": "^1.1.5",
+    "sass-module-importer": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "yargs": "^4.3.2"
+  }
 }

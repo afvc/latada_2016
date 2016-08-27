@@ -5,7 +5,6 @@ body {
     padding: 0;
     margin: 0;
     overflow-x:hidden;
-    
 }
 
 .section-color {
@@ -53,13 +52,13 @@ body {
 
 /* ---------------#responsiveness--------------*/
 
-/*depois de aplicar sass, remover comentários do extend 
+/*depois de aplicar sass, remover comentários do extend
 
 -- conforme as páginas, ou mesmo o "modo" escolhido, podemos querer mudar a cor apenas de certas secções
 
 estas classes servem para dividir a página em secções e permitir que tenham cores diferentes ao mesmo tempo que se mantêm responsivas e com margem das bordas
 
-*/ 
+*/
 
 /* ---------------#section_colors--------------*/
 .section-color-light {
@@ -80,7 +79,7 @@ estas classes servem para dividir a página em secções e permitir que tenham c
 
 /*a aplicação será sempre semelhante à do html latas. a seção de cor por fora e a size por dentro. esta secção define os vários screen sizes da página (quase automaticamente responsivo)
 
-*/ 
+*/
 
 /* ---------------#section_sizes--------------*/
 
@@ -89,7 +88,7 @@ estas classes servem para dividir a página em secções e permitir que tenham c
        padding-bottom: 100px;
        width: 960px;
        max-width: 100%;
-        margin: auto;     
+        margin: auto;
       /*  @include breakpoint ($min: xs) {
             width: 350px;
             max-width: 100%;
@@ -109,13 +108,13 @@ estas classes servem para dividir a página em secções e permitir que tenham c
         @include breakpoint ($min: xl) {
             width: 1240px;
             max-width: 100%;
-        } 
+        }
     }
 
 .section-resized-extra {
   @extend .section-resized;
     padding-bottom: 138px;
-    
+
  @include breakpoint ($min: md) {
       padding-bottom: 193px;}
 }
@@ -124,20 +123,20 @@ estas classes servem para dividir a página em secções e permitir que tenham c
 .section-resized-extra-plus {
   @extend .section-resized;
     padding-bottom: 149px;
-    
+
  @include breakpoint ($min:xs) {
       padding-bottom: 212px;}
-    
+
     @include breakpoint ($min:sm) {
       padding-bottom: 219px;}
-    
+
      @include breakpoint ($min:md) {
       padding-bottom: 232px;}
 
     @include breakpoint ($min:lg) {
       padding-bottom: 160px;}
-    
-    
+
+
 }
 */
 
@@ -249,14 +248,14 @@ estas classes servem para dividir a página em secções e permitir que tenham c
     @return $map;
 }
 
-e depois, basta irmos alterando os tamanhos das fontes conforme os tamanhos das janelas a gosto 
+e depois, basta irmos alterando os tamanhos das fontes conforme os tamanhos das janelas a gosto
 
 -- estes são tirados do hawkpost, depois teremos de rever os tamanhos/cores/fontes e ver até se são todos necessários
 
 $typescale:( heading1: ( xs: 1.7rem, sm: 1.9rem, md: 2.1rem, lg: 2.3rem),
-    sub1: ( xs: 1rem, sm: 1.05rem, md: 1.1rem, lg: 1.2rem, xl: 1.5rem), 
-	text1: ( xs: 0.8rem, sm: 0.9rem, md: 0.9rem, lg: 1.02rem),
-    smalltext1: ( xs: 0.72rem, sm: 0.75rem, md: 0.77rem, lg: 0.78rem), ); 
+    sub1: ( xs: 1rem, sm: 1.05rem, md: 1.1rem, lg: 1.2rem, xl: 1.5rem),
+  text1: ( xs: 0.8rem, sm: 0.9rem, md: 0.9rem, lg: 1.02rem),
+    smalltext1: ( xs: 0.72rem, sm: 0.75rem, md: 0.77rem, lg: 0.78rem), );
 
 */
 
@@ -281,7 +280,7 @@ $typescale:( heading1: ( xs: 1.7rem, sm: 1.9rem, md: 2.1rem, lg: 2.3rem),
             font-size: map-deep-get($typescale, 'heading1', 'lg');
         }
     }
-    
+
     .subtitle {
         font-family: BoldFont;
         color: $black;
@@ -298,7 +297,7 @@ $typescale:( heading1: ( xs: 1.7rem, sm: 1.9rem, md: 2.1rem, lg: 2.3rem),
             font-size: map-deep-get($typescale, 'sub1', 'lg');
         }
     }
-    
+
     .text {
         font-family: TextFont;
         color: $main-color50;
@@ -315,7 +314,7 @@ $typescale:( heading1: ( xs: 1.7rem, sm: 1.9rem, md: 2.1rem, lg: 2.3rem),
             font-size: map-deep-get($typescale, 'text1', 'lg');
         }
     }
-    
+
     .smalltext {
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'smalltext1', 'xs');
