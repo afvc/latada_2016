@@ -1,0 +1,288 @@
+    /*
+ * BASE STYLES
+ * ================================ */
+    
+    //box-sizing model = margin and paddgin inside element so they don't increase width of component.
+    
+html {
+  box-sizing: border-box;
+}
+
+* {
+	&,
+	&:before,
+	&:after {
+		box-sizing: inherit;
+	}
+}
+
+    
+    
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        @extend .text;
+    }
+    
+ 
+    
+    .hidden {
+        display: none;
+    }
+    
+    ul li {
+        list-style-type: none;
+        margin: 5px;
+    }
+    
+    .fa {
+        cursor: pointer;
+    }
+    /*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
+    
+    a {
+        color: $main-color;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+    /* ---------------#section_colors--------------*/
+    
+   
+    .section-color {
+    
+        width: 100vw;
+        height: 100vh; 
+    }
+    
+    .section-color-light {
+        @extend .section-color;
+        background-color: white;
+    }
+    
+    .section-color-medium {
+        @extend .section-color;
+        background-color: $grey;
+    }
+    
+    .section-color-dark {
+        @extend .section-color;
+        background-color: $black;
+    }
+    /* ---------------#responsiveness--------------*/
+    /* ---------------#section_sizes--------------*/
+    
+    .section-size {
+        padding-top: $nav-size*2;
+        padding-bottom: 100px;
+        width: 960px;
+        max-width: 100%;
+        margin: auto;
+        @include breakpoint ($min: xs) {
+            width: 350px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: sm) {
+            width: 620px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: md) {
+            width: 720px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: lg) {
+            width: 1100px;
+            max-width: 100%;
+        }
+        @include breakpoint ($min: xl) {
+            width: 1240px;
+            max-width: 100%;
+        }
+    }
+    
+    .section-siz3-extra {
+        @extend .section-size;
+        padding-bottom: 138px;
+        @include breakpoint ($min: md) {
+            padding-bottom: 193px;
+        }
+    }
+    
+    .section-resized-extra-plus {
+        @extend .section-size;
+        padding-bottom: 149px;
+        @include breakpoint ($min: xs) {
+            padding-bottom: 212px;
+        }
+        @include breakpoint ($min:sm) {
+            padding-bottom: 219px;
+        }
+        @include breakpoint ($min:md) {
+            padding-bottom: 232px;
+        }
+        @include breakpoint ($min:lg) {
+            padding-bottom: 160px;
+        }
+    }
+    /*----------font_responsiveness------------*/
+
+ @font-face {
+    font-family: BoldFont;
+    src: url("Poppins-Bold.ttf");
+}
+
+ @font-face {
+    font-family: SemiBoldFont;
+    src: url(Poppins-SemiBold.ttf);
+}
+
+ @font-face {
+    font-family: TextFont;
+    src: url(Poppins-Regular.ttf);
+}
+
+
+    .title {
+        font-family:BoldFont;
+        color: $black;
+        padding: 2vh 0 2vh;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'heading1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'heading1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'heading1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'heading1', 'lg');
+        }
+        @include breakpoint($min:xl) {
+            font-size: map-deep-get($typescale, 'heading1', 'lg');
+        }
+    }
+    
+    .subtitle {
+        font-family: SemiBoldFont;
+        color: $black;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'sub1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'sub1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'sub1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'sub1', 'lg');
+        }
+    }
+    
+    .text {
+        font-family: TextFont;
+        color: $main-color50;
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'text1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'text1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'text1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'text1', 'lg');
+        }
+    }
+    
+    .smalltext {
+        @include breakpoint($min: xs) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'xs');
+        }
+        @include breakpoint($min:sm) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'sm');
+        }
+        @include breakpoint($min:md) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'md');
+        }
+        @include breakpoint($min:lg) {
+            font-size: map-deep-get($typescale, 'smalltext1', 'lg');
+        }
+    }
+
+
+/*
+    Default Headings 
+    ----
+
+    h1,h2,h3,h4,h5,h6
+*/
+@for $i from 1 to 7 {
+    h#{$i} { 
+        margin: 0;
+        // font-size: 1em; 
+        // font-weight: getFontWeight('semibold');
+    }
+}
+
+  
+/*
+  TABLE
+  ----
+
+  Ensure tables fill up as much space as possible.
+*/
+table {
+  width: 100%;
+}
+
+
+/*
+	IMAGES
+	----
+
+	From inuit.css
+	1. Fluid images for responsive purposes.
+	2. Offset `alt` text from surrounding copy.
+	3. Setting `vertical-align` removes the whitespace that appears under `img`
+	  elements when they are dropped into a page as-is. Safer alternative to
+	  using `display: block;`.
+*/
+img {
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+}
+
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+img[width], /* [1] */
+img[height] {  /* [1] */
+  max-width: none;
+}
+
+
+hr{
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.18;
+  padding: 8px 0px;
+}
