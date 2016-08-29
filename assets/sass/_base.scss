@@ -9,6 +9,8 @@ html {
 }
 
 * {
+    font-family: 'Poppins', sans-serif;
+    
 	&,
 	&:before,
 	&:after {
@@ -43,12 +45,12 @@ html {
     .fa {
         cursor: pointer;
     }
-    /*------------------------------------*\
+/*------------------------------------*\
   #LINKS
 \*------------------------------------*/
     
     a {
-        color: $main-color;
+        color: $black;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
@@ -137,24 +139,8 @@ html {
     }
     /*----------font_responsiveness------------*/
 
- @font-face {
-    font-family: BoldFont;
-    src: url("Poppins-Bold.ttf");
-}
-
- @font-face {
-    font-family: SemiBoldFont;
-    src: url(Poppins-SemiBold.ttf);
-}
-
- @font-face {
-    font-family: TextFont;
-    src: url(Poppins-Regular.ttf);
-}
-
 
     .title {
-        font-family:BoldFont;
         color: $black;
         padding: 2vh 0 2vh;
         @include breakpoint($min: xs) {
@@ -175,7 +161,6 @@ html {
     }
     
     .subtitle {
-        font-family: SemiBoldFont;
         color: $black;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'sub1', 'xs');
@@ -192,7 +177,6 @@ html {
     }
     
     .text {
-        font-family: TextFont;
         color: $main-color50;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'text1', 'xs');
@@ -285,4 +269,35 @@ hr{
   background: currentColor;
   opacity: 0.18;
   padding: 8px 0px;
+}
+
+
+
+/*------------------------------------*\
+  #MENU
+\*------------------------------------*/
+
+
+.menu-fixed{
+    
+    
+    width: 100%;
+    
+    img{
+        margin-top: 20px;
+        z-index: 999;
+        position: fixed;
+        width: 20vw;
+        margin-left: 40vw;
+    }
+    
+}
+
+
+.menu-lateral{
+    margin-top: 20px;
+    margin-right: 20px;
+    z-index: 99999;
+    text-align: right;
+    float: right;
 }
