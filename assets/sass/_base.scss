@@ -64,13 +64,13 @@
         @extend .section-color;
         background: red;
         /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46));
+        background: -webkit-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46));
+        background: -o-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46));
+        background: -moz-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46));
+        background: linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
         /* Standard syntax */
     }
     
