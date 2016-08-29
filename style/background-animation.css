@@ -2,10 +2,12 @@
 /* ---------------background animation--------------*/
 
 .background-animation{
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    z-index: -1;
     overflow: hidden;
     width: 100vw;
+    left: 0;
+    top: 0;
 }
 
 
@@ -14,6 +16,7 @@
 .background-img{
     position: relative;
     opacity: 0.15;
+    z-index: 1;
 }
 
 .background-img__1{
