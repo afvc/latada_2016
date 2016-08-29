@@ -59,6 +59,8 @@ html {
             opacity: 0.7;
         }
     }
+
+ 
     /* ---------------#section_colors--------------*/
     
    
@@ -68,7 +70,15 @@ html {
         height: 100vh; 
     }
     
-    .section-color-light {
+    .section-color-grad {
+        @extend .section-color;
+       background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(36, 229, 112, 0.46), rgba(5, 176, 240, 0.46)); /* Standard syntax */
+    }
+ .section-color-light {
         @extend .section-color;
         background-color: white;
     }
@@ -113,7 +123,7 @@ html {
         }
     }
     
-    .section-siz3-extra {
+    .section-size-extra {
         @extend .section-size;
         padding-bottom: 138px;
         @include breakpoint ($min: md) {
@@ -138,9 +148,7 @@ html {
         }
     }
     /*----------font_responsiveness------------*/
-
-
-    .title {
+   .title {
         color: $black;
         padding: 2vh 0 2vh;
         @include breakpoint($min: xs) {
