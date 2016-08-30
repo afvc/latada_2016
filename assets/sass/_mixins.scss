@@ -89,17 +89,6 @@
 }
 
 
-@mixin rotate_and_movedown($time) {
-    -webkit-animation: move-down1 $time ease, rotate-left $time;
-    -webkit-animation-iteration-count: infinite;
-    
-            animation: move-down1 $time ease, rotate-left $time;
-            animation-iteration-count: infinite;
-}
-
- 
-
-
 /* ---------------#text_size--------------*/
 
 /// Map deep get
