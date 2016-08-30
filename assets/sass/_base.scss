@@ -39,6 +39,10 @@
     .fa {
         cursor: pointer;
     }
+.hidden{
+display: none;
+
+}
     /*------------------------------------*\
   #LINKS
 \*------------------------------------*/
@@ -60,34 +64,7 @@
         height: 100vh;
     }
     
-    .section-color-grad {
-        @extend .section-color;
-        background: red;
-        /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
-        /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
-        /* For Firefox 3.6 to 15 */
-        background: linear-gradient(rgba(36, 229, 112, 0.26), rgba(5, 176, 240, 0.26));
-        /* Standard syntax */
-    }
-    
-    .section-color-light {
-        @extend .section-color;
-        background-color: white;
-    }
-    
-    .section-color-medium {
-        @extend .section-color;
-        background-color: $grey;
-    }
-    
-    .section-color-dark {
-        @extend .section-color;
-        background-color: $black;
-    }
+   
     /* ---------------#responsiveness--------------*/
     /* ---------------#section_sizes--------------*/
     
@@ -247,40 +224,4 @@
         opacity: 0.18;
         padding: 8px 0px;
     }
-    /*------------------------------------*\
-  #MENU
-\*------------------------------------*/
-    
-    .menu-fixed {
-        width: 100%;
-        .menu-logo {
-            margin-top: 20px;
-            z-index: 999;
-         
-            max-width: 12vw;
-            width:100%; 
-            margin-right: 20px;
-            @include breakpoint($min:xs){ 
-             max-width: 100px;
-            width:100%; 
-               }
-            @include breakpoint($min:sm){ 
-             max-width: 130px;
-            width:100%; 
-               }
-            
-             @include breakpoint($min:md){ 
-             max-width: 150px;
-            width:100%; 
-               }
-             
-        }
-    }
-    
-    .menu-lateral {
-        margin-top: 20px;
-        margin-right: 20px;
-        z-index: 999;
-        //text-align: right;
-        //float: right;
-    }
+ 
