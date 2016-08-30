@@ -3,7 +3,21 @@
   #MENU
 \*------------------------------------*/
     
-    .menu-fixed {
+
+ 
+
+
+
+    .nav-side {
+        
+        margin-top: 20px;
+        margin-right: 20px;
+        z-index: 999;
+        
+    }
+
+
+    .nav-container-fixed {
         width: 100%;
         .menu-logo {
             margin-top: 20px;
@@ -31,14 +45,6 @@
 
 
     
-    .menu-lateral {
-        margin-top: 20px;
-        margin-right: 20px;
-        z-index: 999;
-        //text-align: right;
-        //float: right;
-    }
-
 
 
 

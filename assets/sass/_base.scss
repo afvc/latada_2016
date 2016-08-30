@@ -8,7 +8,7 @@
     }
     
     * {
-       // font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', sans-serif;
         &,
         &:before,
         &:after {
@@ -69,7 +69,7 @@ display: none;
     /* ---------------#section_sizes--------------*/
     
     .section-size {
-        padding-top: $nav-size*2;
+       // padding-top: $nav-size*2;
         padding-bottom: 100px;
         width: 960px;
         max-width: 100%;
@@ -104,7 +104,7 @@ display: none;
         }
     }
     
-    .section-resized-extra-plus {
+    .section-size-extra-plus {
         @extend .section-size;
         padding-bottom: 149px;
         @include breakpoint ($min: xs) {
@@ -120,75 +120,7 @@ display: none;
             padding-bottom: 160px;
         }
     }
-    /*----------font_responsiveness------------*/
-    
-    .title {
-        color: $black;
-        
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'heading1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'heading1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'heading1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'heading1', 'lg');
-        }
-        @include breakpoint($min:xl) {
-            font-size: map-deep-get($typescale, 'heading1', 'lg');
-        }
-       line-height: 1.2;
-    }
-    
-    .subtitle {
-        color: $black;
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'sub1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'sub1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'sub1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'sub1', 'lg');
-        }
-    }
-    
-    .text {
-        color: $main-color50;
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'text1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'text1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'text1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'text1', 'lg');
-        }
-    }
-    
-    .smalltext {
-        @include breakpoint($min: xs) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'xs');
-        }
-        @include breakpoint($min:sm) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'sm');
-        }
-        @include breakpoint($min:md) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'md');
-        }
-        @include breakpoint($min:lg) {
-            font-size: map-deep-get($typescale, 'smalltext1', 'lg');
-        }
-    }
+  
     /*
     Default Headings 
     ----
@@ -226,104 +158,4 @@ display: none;
         opacity: 0.18;
         padding: 8px 0px;
     }
- 
-
-.menu-lateral{
-    position: fixed;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    z-index: 99999;
-    text-align: right;
-
-}
-
-
-/*------------------------------------*\
-  #PAGE TITLE
-\*------------------------------------*/
-
-
-.page-title{
-    
-    display: inline-block;
-    padding: 2vm;
-}
-
-
-.scroll-down-animation{
-    animation: scroll-down-animation 1.5s cubic-bezier(.06,.83,.33,.89) infinite, opacity-animation 1.5s ease infinite;
-}
-
-
-@keyframes scroll-down-animation {
-    from {padding-top: 0vh; padding-bottom: 10vh;}
-    to {padding-top: 10vh; padding-bottom: 0vh;}
-}
-
-@keyframes opacity-animation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-
-
-/*------------------------------------*\
-  #IMAGE BLOCKS
-\*------------------------------------*/
-
-
-.img-block{
-    
-    @extend .text-left;
-    @extend .element-skew;
-    
-    img{
-        position: relative;
-        width: 80%;
-        box-shadow: -20px -20px 0px #b3b3b3;
-        
-        -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-        
-        @extend .transition-ease;
-    }
-    
-    h1,h2{
-        @extend .gradient-blu-gre__text;
-        @extend .transition-ease;
-    }
-    
-    
-    h2{
-        
-        text-shadow: 2px 2px #fff;
-    }
-    
-    
-    &:hover{
-        img{
-            box-shadow: -10px -10px 0px #b3b3b3;
-            
-            -webkit-filter: grayscale(0%);
-                    filter: grayscale(0%);
-        }
-        h1, h2{
-            opacity: 0;
-        }
-        
-        .img-block__text{
-            left: 30%;
-        }
-    }
-    
-}
-
-
-.img-block__text{
-        position: absolute;
-        bottom: 10%;
-        left: 10%;
-        @extend .transition-ease;
-}
  
