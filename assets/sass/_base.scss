@@ -150,7 +150,7 @@ html {
     /*----------font_responsiveness------------*/
    .title {
         color: $black;
-        padding: 2vh 0 2vh;
+        
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'heading1', 'xs');
         }
@@ -166,6 +166,7 @@ html {
         @include breakpoint($min:xl) {
             font-size: map-deep-get($typescale, 'heading1', 'lg');
         }
+       line-height: 1.2;
     }
     
     .subtitle {
@@ -288,7 +289,6 @@ hr{
 
 .menu-fixed{
     
-    
     width: 100%;
     
     img{
@@ -303,9 +303,100 @@ hr{
 
 
 .menu-lateral{
+    position: fixed;
+    right: 0;
     margin-top: 20px;
     margin-right: 20px;
     z-index: 99999;
     text-align: right;
-    float: right;
+
+}
+
+
+/*------------------------------------*\
+  #PAGE TITLE
+\*------------------------------------*/
+
+
+.page-title{
+    
+    display: inline-block;
+    padding: 2vm;
+}
+
+
+.scroll-down-animation{
+    animation: scroll-down-animation 1.5s cubic-bezier(.06,.83,.33,.89) infinite, opacity-animation 1.5s ease infinite;
+}
+
+
+@keyframes scroll-down-animation {
+    from {padding-top: 0vh; padding-bottom: 10vh;}
+    to {padding-top: 10vh; padding-bottom: 0vh;}
+}
+
+@keyframes opacity-animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+/*------------------------------------*\
+  #IMAGE BLOCKS
+\*------------------------------------*/
+
+
+.img-block{
+    
+    @extend .text-left;
+    @extend .element-skew;
+    
+    img{
+        position: relative;
+        width: 80%;
+        box-shadow: -20px -20px 0px #b3b3b3;
+        
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        
+        @extend .transition-ease;
+    }
+    
+    h1,h2{
+        @extend .gradient-blu-gre__text;
+        @extend .transition-ease;
+    }
+    
+    
+    h2{
+        
+        text-shadow: 2px 2px #fff;
+    }
+    
+    
+    &:hover{
+        img{
+            box-shadow: -10px -10px 0px #b3b3b3;
+            
+            -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+        }
+        h1, h2{
+            opacity: 0;
+        }
+        
+        .img-block__text{
+            left: 30%;
+        }
+    }
+    
+}
+
+
+.img-block__text{
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        @extend .transition-ease;
 }

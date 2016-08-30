@@ -42,7 +42,11 @@
  .text-right {
      text-align: right;
  }
- 
+
+ .text-center{
+    text-align: center;
+ }
+  
  .text-note {
      color: $grey;
      font-style: italic;
@@ -57,10 +61,49 @@
 .break-word{word-wrap:break-word;}
 
 
+/*------------------------------------*\
+  #GRADIENT COLORS
+\*------------------------------------*/
+
+.gradient-blu-gre__text{
+     background: -webkit-linear-gradient(left, #20C26B, #279BCD);
+                 -webkit-background-clip: text;
+                 -webkit-text-fill-color: transparent;
+}
+
+.gradient-blu-gre__border{
+    
+    border: solid 10px #00C5EC;
+    
+       -moz-border-image: -moz-linear-gradient(left, #20C26B 0%, #279BCD 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #20C26B 0%, #279BCD 100%);
+
+    
+    border-image-slice: 1;
+}
+
+/*------------------------------------*\
+  #ELEMENT SKEW
+\*------------------------------------*/
+
+.element-skew{
+    -webkit-transform:skewY(-5deg);  
+        -ms-transform:skewY(-5deg);
+            transform:skewY(-5deg);
+}
+
+/*------------------------------------*\
+  #OPACITY
+\*------------------------------------*/
+
+.opacity-1{
+    opacity: 1;
+}
 
 
-
-
+.opacity-0{
+    opacity: 0;
+}
 
 /*------------------------------------*\
   #ALIGNMENTS_AND_MARGINS
@@ -91,9 +134,30 @@
      margin-top: 0px;
  }
 
+.margin-top-10{
+    margin-top: 10vh;
+}
 
+.top-page{
+    padding-top: 40vh;
+}
 
+.bottom-page{
+    padding-bottom: 40vh;
+}
 
+.top-page-half{
+    padding-top: 20vh;
+}
+
+.padding-1-5vh{
+    padding: 1.5vh 1.5vh;
+}
+
+.transition-ease{
+    -webkit-transition: 0.3s ease;
+            transition: 0.3s ease;
+}
  /*------------------------------------*\
   #COL_XXS_AND_ORDER
 \*------------------------------------*/
