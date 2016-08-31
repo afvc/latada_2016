@@ -4,14 +4,10 @@
 \*------------------------------------*/
     
 
- 
-
-
-
     .nav-side {
-        
-        margin-top: 20px;
-        margin-right: 20px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         z-index: 999;
         
     }
@@ -19,11 +15,13 @@
 
     .nav-container-fixed {
         width: 100%;
+        position: fixed;
+        z-index: 999;
         .menu-logo {
             margin-top: 20px;
             z-index: 999;
          
-            max-width: 12vw;
+            max-width: 18vw;
             width:100%; 
             margin-right: 20px;
             @include breakpoint($min:xs){ 
@@ -70,7 +68,7 @@
 .icon--hamburger:after{
     width: 18px;
     height: 2px;
-    background: currentColor;
+    background: #181818;
     transition: all 0.2s;
 }
 
@@ -94,16 +92,10 @@
 
 /*----------#BUTTON-ICON------------*/
 
+
 .button--icon-container {
     position: relative;
-    width: 24px;
-    height: 24px;
-    padding:0;
-    left:90vw;
-    
-    @include breakpoint($min:xs){
-    
-     left:80vw;}
+    width: 30vw;
     
     
     display: inline-block;
@@ -138,17 +130,13 @@
 
 .header-bar {
     position: fixed;
-    top:0;
     width: 100%;
-    background: #101010;
-    height: 56px;
-    box-shadow: 0px 3px 12px rgba(0,0,0,0.12);
-    font-size: 0.875rem;
-    display: flex;
-    align-items: center;
+    background: none;
+
     z-index: 100;
-    padding: 0 8px;
-    justify-content: space-between;
+    padding: 20px;
+    right: 0;
+
 }
 
 .header-bar__block {
@@ -189,32 +177,6 @@
     transform-origin: top right;
 }
 
-.nav__header {
-    background: #f4f4f4;
-    padding: 16px;
-}
-
-.nav__list {
-    list-style: none;
-    margin:0;
-    padding:0;
-}
-
-.nav__link {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    color:$black;
-    
-      .logo {
-        display: inline;
-        max-width: 200px;
-        width: 100%;
-        }
-}
-
 
  
 .overlay{
@@ -230,7 +192,6 @@
     pointer-events: none;
     transition: opacity 0.2s 0s ease, visibility 0.2s 0.2s ease;
     z-index: 0;
-
 }
 
 .overlay--inner{
@@ -268,7 +229,6 @@
     transform-origin: top right;
      transform: translateX(0px);
 }
-
 
 
 

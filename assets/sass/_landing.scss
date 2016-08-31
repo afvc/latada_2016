@@ -7,7 +7,6 @@
 .page-title{
     
    display: inline-block;
-    
    
 }
 
@@ -41,7 +40,8 @@
     
     img{
         position: relative;
-        width: 40%;
+        width: 70%;
+        margin-left: 15%;
         box-shadow: -20px -20px 0px #b3b3b3;
         
         -webkit-filter: grayscale(100%);
@@ -64,18 +64,16 @@
     
     &:hover{
         img{
-            box-shadow: -10px -10px 0px #b3b3b3;
+            box-shadow: -10px -10px 0px #b3b3b9;
             
             -webkit-filter: grayscale(0%);
                     filter: grayscale(0%);
         }
+        
         h1, h2{
             opacity: 0;
         }
         
-        .img-block__text{
-            left: 30%;
-        }
     }
     
 }
@@ -84,7 +82,7 @@
 .img-block__text{
         position: absolute;
         bottom: 10%;
-        left: 10%;
+        left: 20%;
         @extend .transition-ease;
 }
  

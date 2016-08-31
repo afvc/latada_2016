@@ -108,6 +108,10 @@
      -webkit-border-image: -webkit-linear-gradient(left, #20C26B 0%, #279BCD 100%);
      border-image-slice: 1;
  }
+
+.border-black{
+    border: solid 10px #000;
+}
  /*------------------------------------*\
   #ELEMENT SKEW
 \*------------------------------------*/
@@ -161,6 +165,10 @@
      margin-top: 10vh;
  }
 
+.margin-left-20px{
+    margin-left: 20px;
+}
+
 .margin-top-neg {
      margin-top: -4vh;
     margin-bottom: 3vh;
@@ -183,9 +191,15 @@
 .margin-top-small {
      margin-top: 2vh;
  }
+
  .top-page {
      padding-top: 40vh;
  }
+
+ .top-page-title {
+     padding-top: 30vh;
+ }
+ 
  
 .top-page-pull {
    margin-top:-250px;}
@@ -204,7 +218,7 @@
  }
  
  .top-page-half {
-     padding-top: 20vh;
+     padding-top: 10vh;
  }
  
  .padding-1-5vh {
@@ -215,6 +229,15 @@
      -webkit-transition: 0.3s ease;
      transition: 0.3s ease;
  }
+
+ /*------------------------------------*\
+  #Z-INDEX
+\*------------------------------------*/
+
+.z-index-999{
+    z-index: 999;
+}
+
  /*------------------------------------*\
   #COL_XXS_AND_ORDER
 \*------------------------------------*/
