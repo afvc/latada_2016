@@ -96,6 +96,9 @@
   #GRADIENT COLORS
 \*------------------------------------*/
  
+
+  
+
  .gradient-blu-gre__text {
      background: -webkit-linear-gradient(left, #20C26B, #279BCD);
      -webkit-background-clip: text;
@@ -175,6 +178,12 @@
     
  }
 
+.margin-neg {
+     margin-top: -1vh;
+    margin-bottom: -1vh;
+    
+ }
+
 
 .margin-2 {
      margin-top: 2vh;
@@ -191,6 +200,13 @@
 .margin-top-small {
      margin-top: 2vh;
  }
+
+
+.row-margin-bot{
+    margin-bottom: 6vh;
+}
+
+
 
  .top-page {
      padding-top: 40vh;
@@ -224,7 +240,15 @@
  .padding-1-5vh {
      padding: 1.5vh 1.5vh;
  }
+
+ .padding-top-bottom{
+     padding: 1.5vh 0 1.5vh;
+ }
  
+ .padding-bottom{
+     padding: 0 0 1.5vh;
+ }
+
  .transition-ease {
      -webkit-transition: 0.3s ease;
      transition: 0.3s ease;
