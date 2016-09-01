@@ -56,7 +56,7 @@
      color: $main-color-dark;
      margin: 20px 0px 0px;
  }
- 
+<<<<<<< HEAD
  
  .break-word {
      word-wrap: break-word;
@@ -93,11 +93,14 @@
      @extend .section-color;
      background-color: $black;
  }
- 
- 
+ /*------------------------------------*\
+=======
+
+.break-word{word-wrap:break-word;}
+
 
 /*------------------------------------*\
- 
+>>>>>>> teste_chari
   #GRADIENT COLORS
 \*------------------------------------*/
  
@@ -132,7 +135,7 @@
  /*------------------------------------*\
   #OPACITY
 \*------------------------------------*/
- 
+<<<<<<< HEAD
  
  .opacity-1 {
      opacity: 1;
@@ -141,23 +144,23 @@
  .opacity-0 {
      opacity: 0;
  }
- / 
+ /*------------------------------------*\
+=======
 
-/*------------------------------------*\
- 
-  #ALIGNMENTS_AND_MARGINS
-\*------------------------------------*/
- 
-.center-left{
-
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
-
-
+.opacity-1{
+    opacity: 1;
 }
 
 
+.opacity-0{
+    opacity: 0;
+}
+
+/*------------------------------------*\
+>>>>>>> teste_chari
+  #ALIGNMENTS_AND_MARGINS
+\*------------------------------------*/
+ 
  .full-height {
      height: 100%;
  }
