@@ -93,8 +93,8 @@
     
     img{
         position: relative;
-        width: 50%;
-        margin-left: 15%;
+        width: 60%;
+        margin-left: 20%;
         box-shadow: -20px -20px 0px #b3b3b3;
         -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);   
@@ -104,9 +104,13 @@
     h1{
         @extend .gradient-blu-gre__text;
         @extend .transition-ease;
+        padding: 5px 20px 10px 20px;
+        line-height: 1.3;
     }
     
-    h2{color:black;}
+    h2{
+        color:black;
+        padding: 20px 20px 0 20px;}
     
     
     
@@ -115,11 +119,7 @@
             box-shadow: -10px -10px 0px #b3b3b9;
             -webkit-filter: grayscale(0%);
             filter: grayscale(0%);   }
-        
-        h1, h2{
-            opacity: 0;
-        }
-        
+   
     }
 
 
@@ -130,5 +130,17 @@
         bottom: -40%;
         left: 20%;
         @extend .transition-ease;
+    
+        @include breakpoint ($min: sm) {
+            background: #fff;
+            bottom: 20%;
+            left: 30%;
+        }
+    
+        @include breakpoint ($min: xs) {
+            background: #fff;
+            bottom: 20%;
+            left: 30%;
+        }
 }
  
