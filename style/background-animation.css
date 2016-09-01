@@ -3,9 +3,11 @@
 
 .background-animation{
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     overflow: hidden;
     width: 100vw;
+    left: 0;
+    top: 0;
 }
 
 
@@ -14,6 +16,7 @@
 .background-img{
     position: relative;
     opacity: 0.15;
+    z-index: 1;
 }
 
 .background-img__1{
@@ -73,6 +76,47 @@
 }
 
 
+.background-img__6{
+    width: 10vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 3s ease, rotate-left 3s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 3s ease, rotate-left 3s;
+            animation-iteration-count: infinite;
+}
+.background-img__7{
+    width: 20vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 12s ease, rotate-left 12s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 12s ease, rotate-left 12s;
+            animation-iteration-count: infinite;
+}
+.background-img__8{
+    width: 10vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 21s ease, rotate-left 21s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 21s ease, rotate-left 21s;
+            animation-iteration-count: infinite;
+}
+
+.background-img__9{
+    width: 20vh;
+    left: 0vw;
+    
+    -webkit-animation: move-down2 14s ease, rotate-left 14s;
+    -webkit-animation-iteration-count: infinite;
+    
+            animation: move-down2 14s ease, rotate-left 14s;
+            animation-iteration-count: infinite;
+}
 
 
 /* ---------------#moving_animation--------------*/
