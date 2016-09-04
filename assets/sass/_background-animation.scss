@@ -6,9 +6,11 @@
     z-index: -1;
     overflow: hidden;
     width: 100vw;
+    height: 100vh;
     left: 0;
     top: 0;
 }
+
 
 
 /* ---------------background images--------------*/
@@ -31,7 +33,7 @@
 .background-img__2{
     width: 40vh;
     left: 0vw;
-    left: 0vw;
+
     
       @include rotate_and_movedown(20s);
     
@@ -162,5 +164,15 @@
     }
     to {
         transform: rotate(30deg);
+    }
+}
+
+
+/*----------LANDING---------------*/
+
+
+.background-animation-landing{
+    .background-img{
+        opacity: 0.3;
     }
 }
