@@ -1,0 +1,202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'gulp' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of /Users/anafilipacruz/Documents/GitHub/latada_2016/package.json
+5 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/browser-sync/package.json
+6 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/del/package.json
+7 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-autoprefixer/package.json
+9 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-clean-css/package.json
+10 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-concat/package.json
+11 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-deploy-git/package.json
+12 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-if/package.json
+13 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-imagemin/package.json
+14 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-notify/package.json
+15 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-plumber/package.json
+16 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-sass/package.json
+17 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-sass-bulk-import/package.json
+18 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-sourcemaps/package.json
+19 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp-util/package.json
+20 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/path/package.json
+21 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/run-sequence/package.json
+22 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/sass-module-importer/package.json
+23 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/vinyl-buffer/package.json
+24 verbose installManyTop reading scoped package data from /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/yargs/package.json
+25 info package.json gulp-notify@2.2.0 No license field.
+26 info package.json path@0.12.7 path is also the name of a node core module.
+27 verbose readDependencies loading dependencies from /Users/anafilipacruz/Documents/GitHub/latada_2016/package.json
+28 silly cache add args [ 'gulp', null ]
+29 verbose cache add spec gulp
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'gulp',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'gulp',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: 'latest',
+30 silly cache add   type: 'tag' }
+31 silly addNamed gulp@latest
+32 verbose addNamed "latest" is being treated as a dist-tag for gulp
+33 info addNameTag [ 'gulp', 'latest' ]
+34 silly mapToRegistry name gulp
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'gulp',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'gulp',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/gulp
+39 verbose addNameTag registry:https://registry.npmjs.org/gulp not in flight; fetching
+40 verbose request uri https://registry.npmjs.org/gulp
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 21:22:15
+43 verbose request id 0e6d69a5082f5c22
+44 verbose etag "AHA9TU4Z4EGVDZFYDBJS315F3"
+45 http request GET https://registry.npmjs.org/gulp
+46 http 304 https://registry.npmjs.org/gulp
+47 verbose headers { date: 'Tue, 06 Sep 2016 20:22:17 GMT',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   'cache-control': 'max-age=300',
+47 verbose headers   etag: '"AHA9TU4Z4EGVDZFYDBJS315F3"',
+47 verbose headers   age: '123',
+47 verbose headers   connection: 'keep-alive',
+47 verbose headers   'x-served-by': 'cache-bma7029-BMA',
+47 verbose headers   'x-cache': 'HIT',
+47 verbose headers   'x-cache-hits': '1',
+47 verbose headers   'x-timer': 'S1473193337.878873,VS0,VE0',
+47 verbose headers   vary: 'Accept-Encoding' }
+48 silly get cb [ 304,
+48 silly get   { date: 'Tue, 06 Sep 2016 20:22:17 GMT',
+48 silly get     via: '1.1 varnish',
+48 silly get     'cache-control': 'max-age=300',
+48 silly get     etag: '"AHA9TU4Z4EGVDZFYDBJS315F3"',
+48 silly get     age: '123',
+48 silly get     connection: 'keep-alive',
+48 silly get     'x-served-by': 'cache-bma7029-BMA',
+48 silly get     'x-cache': 'HIT',
+48 silly get     'x-cache-hits': '1',
+48 silly get     'x-timer': 'S1473193337.878873,VS0,VE0',
+48 silly get     vary: 'Accept-Encoding' } ]
+49 verbose etag https://registry.npmjs.org/gulp from cache
+50 verbose get saving gulp to /Users/anafilipacruz/.npm/registry.npmjs.org/gulp/.cache.json
+51 verbose correctMkdir /Users/anafilipacruz/.npm correctMkdir not in flight; initializing
+52 silly addNameTag next cb for gulp with tag latest
+53 silly addNamed gulp@3.9.1
+54 verbose addNamed "3.9.1" is a plain semver version for gulp
+55 silly cache afterAdd gulp@3.9.1
+56 verbose afterAdd /Users/anafilipacruz/.npm/gulp/3.9.1/package/package.json not in flight; writing
+57 verbose correctMkdir /Users/anafilipacruz/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /Users/anafilipacruz/.npm/gulp/3.9.1/package/package.json written
+59 silly install resolved [ { name: 'gulp',
+59 silly install resolved     description: 'The streaming build system',
+59 silly install resolved     version: '3.9.1',
+59 silly install resolved     homepage: 'http://gulpjs.com',
+59 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+59 silly install resolved     author:
+59 silly install resolved      { name: 'Fractal',
+59 silly install resolved        email: 'contact@wearefractal.com',
+59 silly install resolved        url: 'http://wearefractal.com/' },
+59 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+59 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+59 silly install resolved     bin: { gulp: './bin/gulp.js' },
+59 silly install resolved     man: [ 'gulp.1' ],
+59 silly install resolved     dependencies:
+59 silly install resolved      { archy: '^1.0.0',
+59 silly install resolved        chalk: '^1.0.0',
+59 silly install resolved        deprecated: '^0.0.1',
+59 silly install resolved        'gulp-util': '^3.0.0',
+59 silly install resolved        interpret: '^1.0.0',
+59 silly install resolved        liftoff: '^2.1.0',
+59 silly install resolved        minimist: '^1.1.0',
+59 silly install resolved        orchestrator: '^0.3.0',
+59 silly install resolved        'pretty-hrtime': '^1.0.0',
+59 silly install resolved        semver: '^4.1.0',
+59 silly install resolved        tildify: '^1.0.0',
+59 silly install resolved        v8flags: '^2.0.2',
+59 silly install resolved        'vinyl-fs': '^0.3.0' },
+59 silly install resolved     devDependencies:
+59 silly install resolved      { coveralls: '^2.7.0',
+59 silly install resolved        eslint: '^1.7.3',
+59 silly install resolved        'eslint-config-gulp': '^2.0.0',
+59 silly install resolved        'graceful-fs': '^3.0.0',
+59 silly install resolved        istanbul: '^0.3.0',
+59 silly install resolved        jscs: '^2.3.5',
+59 silly install resolved        'jscs-preset-gulp': '^1.0.0',
+59 silly install resolved        'marked-man': '^0.1.3',
+59 silly install resolved        mkdirp: '^0.5.0',
+59 silly install resolved        mocha: '^2.0.1',
+59 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+59 silly install resolved        q: '^1.0.0',
+59 silly install resolved        rimraf: '^2.2.5',
+59 silly install resolved        should: '^5.0.1' },
+59 silly install resolved     scripts:
+59 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+59 silly install resolved        lint: 'eslint . && jscs *.js bin/ lib/ test/',
+59 silly install resolved        pretest: 'npm run lint',
+59 silly install resolved        test: 'mocha --reporter spec',
+59 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+59 silly install resolved     engines: { node: '>= 0.9' },
+59 silly install resolved     license: 'MIT',
+59 silly install resolved     gitHead: '9c14e3a13a73a32e424f144d62566671b2fcdbed',
+59 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+59 silly install resolved     _id: 'gulp@3.9.1',
+59 silly install resolved     _shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+59 silly install resolved     _from: 'gulp@latest',
+59 silly install resolved     _npmVersion: '2.14.14',
+59 silly install resolved     _nodeVersion: '0.10.41',
+59 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+59 silly install resolved     maintainers: [ [Object], [Object] ],
+59 silly install resolved     dist:
+59 silly install resolved      { shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+59 silly install resolved        tarball: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' },
+59 silly install resolved     _npmOperationalInternal:
+59 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+59 silly install resolved        tmp: 'tmp/gulp-3.9.1.tgz_1454957415500_0.15343931876122952' },
+59 silly install resolved     directories: {},
+59 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz',
+59 silly install resolved     readme: 'ERROR: No README data found!' } ]
+60 info install gulp@3.9.1 into /Users/anafilipacruz/Documents/GitHub/latada_2016
+61 info installOne gulp@3.9.1
+62 verbose installOne of gulp to /Users/anafilipacruz/Documents/GitHub/latada_2016 not in flight; installing
+63 verbose correctMkdir /Users/anafilipacruz/.npm/_locks correctMkdir not in flight; initializing
+64 verbose lock using /Users/anafilipacruz/.npm/_locks/gulp-41b3227376ca4b9a.lock for /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+65 silly install write writing gulp 3.9.1 to /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+66 verbose unbuild node_modules/gulp
+67 silly gentlyRm /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp is being purged from base /Users/anafilipacruz/Documents/GitHub/latada_2016
+68 verbose gentlyRm don't care about contents; nuking /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+69 silly vacuum-fs purging /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+70 verbose unlock done using /Users/anafilipacruz/.npm/_locks/gulp-41b3227376ca4b9a.lock for /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+71 verbose stack Error: EACCES: permission denied, unlink '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver'
+71 verbose stack     at Error (native)
+72 verbose cwd /Users/anafilipacruz/Documents/GitHub/latada_2016
+73 error Darwin 15.6.0
+74 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp"
+75 error node v4.4.2
+76 error npm  v2.15.0
+77 error path /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver
+78 error code EACCES
+79 error errno -13
+80 error syscall unlink
+81 error Error: EACCES: permission denied, unlink '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver'
+81 error     at Error (native)
+81 error  { [Error: EACCES: permission denied, unlink '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver']
+81 error   errno: -13,
+81 error   code: 'EACCES',
+81 error   syscall: 'unlink',
+81 error   path: '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver' }
+82 error Please try running this command again as root/Administrator.
+83 verbose exit [ -13, true ]
+84 verbose unbuild node_modules/gulp
+85 silly gentlyRm /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp is being purged from base /Users/anafilipacruz/Documents/GitHub/latada_2016
+86 verbose gentlyRm don't care about contents; nuking /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+87 silly vacuum-fs purging /Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp
+88 error error rolling back Error: EACCES: permission denied, unlink '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver'
+88 error error rolling back     at Error (native)
+88 error error rolling back  { [Error: EACCES: permission denied, unlink '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver']
+88 error error rolling back   errno: -13,
+88 error error rolling back   code: 'EACCES',
+88 error error rolling back   syscall: 'unlink',
+88 error error rolling back   path: '/Users/anafilipacruz/Documents/GitHub/latada_2016/node_modules/gulp/node_modules/.bin/semver' }
