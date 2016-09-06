@@ -2,7 +2,7 @@
     
     .title {
         color: $black;
-        
+        font-family: BoldFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'heading1', 'xs');
         }
@@ -24,7 +24,7 @@
 
 .medium {
         color: $black;
-        
+        font-family: MediumFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'medium1', 'xs');
         }
@@ -47,6 +47,7 @@
     
     .subtitle {
         color: $black;
+        font-family: SemiBoldFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'sub1', 'xs');
         }
@@ -63,6 +64,7 @@
     
     .text {
         color: $main-color50;
+         font-family: TextFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'text1', 'xs');
         }
@@ -78,6 +80,7 @@
     }
     
     .smalltext {
+         font-family: LightFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'smalltext1', 'xs');
         }
