@@ -160,6 +160,12 @@ svg {
   left: 0px;
   height: 100%;
   width: 100%;
+    
+      @include breakpoint ($min: xs) {
+    left: 10%;
+  height: 100%;
+  width: 80%;
+        }
 }
 path{
   fill: none;
