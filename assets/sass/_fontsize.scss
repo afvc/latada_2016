@@ -24,7 +24,7 @@
 
 .medium {
         color: $black;
-        font-family: MediumFont;
+        font-family: BoldFont;
         @include breakpoint($min: xs) {
             font-size: map-deep-get($typescale, 'medium1', 'xs');
         }
