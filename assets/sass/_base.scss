@@ -8,11 +8,13 @@
     }
     
     * {
+        overflow-x: hidden;
         font-family: 'Poppins', sans-serif;
         &,
         &:before,
         &:after {
             box-sizing: inherit;
+            
         }
     }
     
@@ -25,7 +27,6 @@
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         @extend .text;
