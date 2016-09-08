@@ -52,14 +52,11 @@
     h1,h2{
        @extend .gradient-blu-gre__text;
         @extend .transition-ease;
+        text-shadow: 4px 4px #fff;
     }
     
     
-    h2{
-        
-        text-shadow: 2px 2px #fff;
-    }
-    
+
     
     &:hover{
         img{
@@ -70,7 +67,7 @@
         }
         
         h1, h2{
-            opacity: 0;
+            text-shadow: 0 0 #fff;
         }
         
     }

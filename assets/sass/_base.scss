@@ -132,8 +132,12 @@
     @for $i from 1 to 7 {
         h#{$i} {
             margin: 0;
-            // font-size: 1em; 
-            // font-weight: getFontWeight('semibold');
+        }
+    }
+    
+    @for $i from 2 to 7 {
+        h#{$i} {
+            font-weight: 600;
         }
     }
     /*
